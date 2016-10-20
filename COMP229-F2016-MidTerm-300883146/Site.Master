@@ -31,9 +31,16 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
+                        <asp:PlaceHolder ID="publicPlaceHolder" runat="server">
                         <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                         <li id="Li1" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Log In</a></li>
+                        <li id="Li1" runat="server"><a href="Login.aspx"><i class="fa fa-home fa-lg"></i> Login</a></li>
                         <li id="todo" runat="server"><a href="TodoList.aspx"><i class="fa fa-list-alt fa-lg"></i> Todo List</a></li>
+                        </asp:PlaceHolder>
+                        <asp:PlaceHolder ID="LoginPlaceHolder" runat="server">
+                        <li id="Li2" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li id="Li3" runat="server"><a href="Logout.aspx"><i class="fa fa-home fa-lg"></i> Logout</a></li>
+                        <li id="Li4" runat="server"><a href="TodoList.aspx"><i class="fa fa-list-alt fa-lg"></i> Todo List</a></li>
+                        </asp:PlaceHolder>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->

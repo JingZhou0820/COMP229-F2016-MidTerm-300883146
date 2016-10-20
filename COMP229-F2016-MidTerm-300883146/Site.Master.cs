@@ -12,6 +12,21 @@ namespace COMP229_F2016_MidTerm_300883146
         protected void Page_Load(object sender, EventArgs e)
         {
             SetActivePage();
+            if (!IsPostBack)
+            {
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    publicPlaceHolder.Visible = false;
+                    LoginPlaceHolder.Visible = true;
+
+                }
+                else
+                {
+                    publicPlaceHolder.Visible = true;
+                    LoginPlaceHolder.Visible = false;
+                }
+
+            }
         }
 
         /**
