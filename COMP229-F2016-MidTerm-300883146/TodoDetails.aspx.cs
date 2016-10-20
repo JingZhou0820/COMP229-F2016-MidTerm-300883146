@@ -44,6 +44,7 @@ namespace COMP229_F2016_MidTerm_300883146
             using (TodoContext db = new TodoContext())
             {
                 Todo newTodo = new Todo();
+                //put flag to see if have id
                 int todoId = 0;
                 if (Request.QueryString.Count>0)
                 {
@@ -52,6 +53,7 @@ namespace COMP229_F2016_MidTerm_300883146
                                where s.TodoID ==todoId
                                select s).FirstOrDefault();
                 }
+                //assign data to object
                 newTodo.TodoDescription = DescriptionTextBox.Text;
                 newTodo.TodoNotes = TodoNodeTextBox.Text;
                 if (todoId==0)

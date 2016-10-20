@@ -14,6 +14,7 @@ namespace COMP229_F2016_MidTerm_300883146
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //SinOut functionality
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
             authenticationManager.SignOut();
             Response.Redirect("Default.aspx");

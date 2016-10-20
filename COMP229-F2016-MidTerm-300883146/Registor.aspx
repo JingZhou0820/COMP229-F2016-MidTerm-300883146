@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registor.aspx.cs" Inherits="COMP229_F2016_MidTerm_300883146.Registor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+ <!--Jing Zhou 300883146-->
+<!--10.19.2016-->
     <div class="container">
      <div class="row">
          <div class="col-md-offset-4 col-md-6">

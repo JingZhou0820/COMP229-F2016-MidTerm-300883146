@@ -37,6 +37,7 @@ namespace COMP229_F2016_MidTerm_300883146
             }
             else
             {
+                //output erro message
                 erroLabel.Text = result.Errors.FirstOrDefault();
             }
         }
